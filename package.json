@@ -1,0 +1,41 @@
+{
+  "name": "dot-to-dot",
+  "version": "1.0.0",
+  "description": "Connect the Dots to draw the picture, without crossing the same path more than once",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jquery": "^2.1.4",
+    "lessify": "^1.0.1",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-redux": "^4.0.0",
+    "reactify": "^1.1.1",
+    "redux": "^3.0.4"
+  },
+  "devDependencies": {
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "express": "^4.13.3",
+    "redux-devtools": "^2.1.5",
+    "watchify": "^3.6.0"
+  },
+  "scripts": {
+    "test": "test",
+    "bundle": "browserify app/main.js -t reactify -t lessify -t babelify --outfile bundle.js",
+    "watch": "watchify app/main.js -d -t reactify -t lessify -t babelify --outfile bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Georgette/Dot-to-Dot.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "GeGe Pincin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Georgette/Dot-to-Dot/issues"
+  },
+  "homepage": "https://github.com/Georgette/Dot-to-Dot#readme"
+}
